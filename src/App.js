@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import COD from "./components/COD";
+import Footer from "./components/Footer";
+import GameCenters from "./components/GameCenters";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Trending from "./components/Trending";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="text-white">
+      <Header />
+
+      <div className="w-full xl:max-w-[1250px] mx-auto px-4 " >
+        <Hero />
+        <Trending />
+        <COD />
+        <GameCenters />
+      </div>
+
+      <Footer />
+
+    </main>
   );
 }
 
